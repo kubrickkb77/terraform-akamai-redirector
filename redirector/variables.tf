@@ -34,7 +34,7 @@ variable "email" {
 variable "product_name" {
   description = "The Akamai delivery product name"
   type        = string
-  default     = "dsa"
+  default     = "ion"
 }
 
 # IPV4, IPV6_PERFORMANCE or IPV6_COMPLIANCE
