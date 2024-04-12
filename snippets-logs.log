@@ -1,0 +1,177 @@
+[2024-04-11T15:01:00.939] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:01:00.954] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'papi'
+[2024-04-11T15:01:00.956] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:01:28.596] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:01:28.603] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'papi'
+[2024-04-11T15:01:28.603] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:02:17.977] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:02:17.984] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'kabara'
+[2024-04-11T15:02:17.985] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:02:17.988] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751
+[2024-04-11T15:02:17.995] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:17+0000;nonce=a0beb566-a14e-4eef-bf47-dd8578fc9a46;
+
+[2024-04-11T15:02:17.995] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2024-04-11T15:02:17.995] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2024-04-11T15:02:17.996] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net	/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751			EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:17+0000;nonce=a0beb566-a14e-4eef-bf47-dd8578fc9a46;" 
+
+[2024-04-11T15:02:17.997] [INFO] devops-prov.edgegrid.helpers - Signing key: XCYPJzzRIZPBDVQSdVH2i6kBcY5iykhB9UTBbHnuRjQ=
+
+[2024-04-11T15:02:17.998] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:17+0000;nonce=a0beb566-a14e-4eef-bf47-dd8578fc9a46;signature=6Ppt1IEY6G4bhzibfGLMF5Amo99evVwzpTor0Safmm4=
+
+[2024-04-11T15:02:18.033] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:17+0000;nonce=a0beb566-a14e-4eef-bf47-dd8578fc9a46;signature=6Ppt1IEY6G4bhzibfGLMF5Amo99evVwzpTor0Safmm4=',
+    host: 'akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net'
+  }
+}
+[2024-04-11T15:02:18.889] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/problem+json;charset=UTF-8',
+    'x-ids-session-id': '45c1b648-2075-4a6e-9893-db0fdaa9555a, 45c1b648-2075-4a6e-9893-db0fdaa9555a',
+    'papi-cache-status': 'CACHE_MISS',
+    'content-language': 'en',
+    vary: 'Accept,Accept-Language, Accept-Encoding',
+    'x-trace-id': 'e4886617ed535016',
+    'content-length': '369',
+    date: 'Thu, 11 Apr 2024 14:02:18 GMT',
+    connection: 'close'
+  },
+  statusCode: 403,
+  body: '{\n' +
+    '  "type" : "https://problems.luna.akamaiapis.net/papi/v0/http/forbidden",\n' +
+    '  "title" : "Forbidden",\n' +
+    '  "detail" : "The authorization token you provided does not allow access to this resource.",\n' +
+    '  "instance" : "https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751#e4886617ed535016",\n' +
+    '  "status" : 403\n' +
+    '}'
+}
+[2024-04-11T15:02:18.889] [ERROR] devops-prov.openclient - request failure, status code: '403', response body:  {
+  "type" : "https://problems.luna.akamaiapis.net/papi/v0/http/forbidden",
+  "title" : "Forbidden",
+  "detail" : "The authorization token you provided does not allow access to this resource.",
+  "instance" : "https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751#e4886617ed535016",
+  "status" : 403
+}
+[2024-04-11T15:02:37.974] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:02:37.981] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'kabara'
+[2024-04-11T15:02:37.981] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:02:37.983] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751
+[2024-04-11T15:02:37.987] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:37+0000;nonce=c8922210-3e0b-4703-a0c8-1f8a2d7b1005;
+
+[2024-04-11T15:02:37.987] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2024-04-11T15:02:37.988] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2024-04-11T15:02:37.988] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net	/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751			EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:37+0000;nonce=c8922210-3e0b-4703-a0c8-1f8a2d7b1005;" 
+
+[2024-04-11T15:02:37.989] [INFO] devops-prov.edgegrid.helpers - Signing key: 2SLkXjkek/sEIMpizLDAYyMDpXn4IN8OE8bAzSO5D14=
+
+[2024-04-11T15:02:37.989] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:37+0000;nonce=c8922210-3e0b-4703-a0c8-1f8a2d7b1005;signature=IEBXWUTbh8K+Ko4tLuorRRRzlBwi2kTG3Nod/lNQAi4=
+
+[2024-04-11T15:02:38.018] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:02:37+0000;nonce=c8922210-3e0b-4703-a0c8-1f8a2d7b1005;signature=IEBXWUTbh8K+Ko4tLuorRRRzlBwi2kTG3Nod/lNQAi4=',
+    host: 'akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net'
+  }
+}
+[2024-04-11T15:02:38.590] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/problem+json;charset=UTF-8',
+    'x-ids-session-id': '242249af-6969-4e68-8628-88f6f7358586, 242249af-6969-4e68-8628-88f6f7358586',
+    'papi-cache-status': 'CACHE_MISS',
+    'content-language': 'en',
+    vary: 'Accept,Accept-Language, Accept-Encoding',
+    'x-trace-id': '91a96617ed7d48da',
+    'content-length': '369',
+    date: 'Thu, 11 Apr 2024 14:02:38 GMT',
+    connection: 'close'
+  },
+  statusCode: 403,
+  body: '{\n' +
+    '  "type" : "https://problems.luna.akamaiapis.net/papi/v0/http/forbidden",\n' +
+    '  "title" : "Forbidden",\n' +
+    '  "detail" : "The authorization token you provided does not allow access to this resource.",\n' +
+    '  "instance" : "https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751#91a96617ed7d48da",\n' +
+    '  "status" : 403\n' +
+    '}'
+}
+[2024-04-11T15:02:38.590] [ERROR] devops-prov.openclient - request failure, status code: '403', response body:  {
+  "type" : "https://problems.luna.akamaiapis.net/papi/v0/http/forbidden",
+  "title" : "Forbidden",
+  "detail" : "The authorization token you provided does not allow access to this resource.",
+  "instance" : "https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751#91a96617ed7d48da",
+  "status" : 403
+}
+[2024-04-11T15:02:59.599] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:02:59.607] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'papi'
+[2024-04-11T15:02:59.607] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:03:56.709] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:03:56.715] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'papi'
+[2024-04-11T15:03:56.715] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:04:21.093] [INFO] devops-prov.factory - Switching account key to: 'undefined'
+[2024-04-11T15:04:21.100] [INFO] devops-prov.factory - Using credentials file: 'C:\Users\kabara\.edgerc', section: 'default'
+[2024-04-11T15:04:21.100] [INFO] devops-prov.factory - need to create papi
+[2024-04-11T15:04:21.102] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751
+[2024-04-11T15:04:21.105] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:04:21+0000;nonce=50d16884-def7-433b-b9f1-45d77a714f72;
+
+[2024-04-11T15:04:21.106] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2024-04-11T15:04:21.106] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2024-04-11T15:04:21.106] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net	/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751			EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:04:21+0000;nonce=50d16884-def7-433b-b9f1-45d77a714f72;" 
+
+[2024-04-11T15:04:21.107] [INFO] devops-prov.edgegrid.helpers - Signing key: sNMaWEzzHWii+VT8808b9tUDKn3dKd0yTSUXnG2+HNY=
+
+[2024-04-11T15:04:21.107] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:04:21+0000;nonce=50d16884-def7-433b-b9f1-45d77a714f72;signature=umYXZs7A+RYbBX+8wAo3lBx9hUIcxF0/JsSaM4Shm94=
+
+[2024-04-11T15:04:21.137] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.8-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-jancdhalrykr5s25-w5fgprspuqc5wk3q;access_token=akab-oaoydketrblfltha-yfootss3knwoyppm;timestamp=20240411T14:04:21+0000;nonce=50d16884-def7-433b-b9f1-45d77a714f72;signature=umYXZs7A+RYbBX+8wAo3lBx9hUIcxF0/JsSaM4Shm94=',
+    host: 'akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net'
+  }
+}
+[2024-04-11T15:04:21.942] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/problem+json;charset=UTF-8',
+    'x-ids-session-id': 'ef305ccc-4a3e-47ef-8c1d-4df7b6f4ce1f, ef305ccc-4a3e-47ef-8c1d-4df7b6f4ce1f',
+    'papi-cache-status': 'CACHE_MISS',
+    'content-language': 'en',
+    vary: 'Accept,Accept-Language, Accept-Encoding',
+    'x-trace-id': 'af976617ede557f3',
+    'content-length': '369',
+    date: 'Thu, 11 Apr 2024 14:04:21 GMT',
+    connection: 'close'
+  },
+  statusCode: 403,
+  body: '{\n' +
+    '  "type" : "https://problems.luna.akamaiapis.net/papi/v0/http/forbidden",\n' +
+    '  "title" : "Forbidden",\n' +
+    '  "detail" : "The authorization token you provided does not allow access to this resource.",\n' +
+    '  "instance" : "https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751#af976617ede557f3",\n' +
+    '  "status" : 403\n' +
+    '}'
+}
+[2024-04-11T15:04:21.942] [ERROR] devops-prov.openclient - request failure, status code: '403', response body:  {
+  "type" : "https://problems.luna.akamaiapis.net/papi/v0/http/forbidden",
+  "title" : "Forbidden",
+  "detail" : "The authorization token you provided does not allow access to this resource.",
+  "instance" : "https://akab-vhhqwnxwpka3aovw-37bjhoqcqgbbw36c.luna.akamaiapis.net/papi/v1/cpcodes?contractId=ctr_1-1NC95D&groupId=214751#af976617ede557f3",
+  "status" : 403
+}
