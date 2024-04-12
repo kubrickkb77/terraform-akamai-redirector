@@ -11,7 +11,7 @@
 # $ export AKAMAI_CLIENT_TOKEN="your_client_token"
 provider "akamai" {
   edgerc         = "~/.edgerc"
-  config_section = "betajam"
+  config_section = "kabara"
 }
 
 # our explicit reference to a provider using an alias, just to test permissions in .tf file
@@ -19,7 +19,7 @@ provider "akamai" {
 # https://developer.hashicorp.com/terraform/language/modules/develop/providers#passing-providers-explicitly
 provider "akamai" {
   edgerc         = "~/.edgerc"
-  config_section = "gss_training"
+  config_section = "kabara"
   alias          = "edgedns"
 }
 
