@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"edgedns_cert_cname","Source":"../modules/services/edgedns_cert_cname","Dir":"../modules/services/edgedns_cert_cname"},{"Key":"edgedns_cname","Source":"../modules/services/edgedns_cname_2_akamai","Dir":"../modules/services/edgedns_cname_2_akamai"}]}
